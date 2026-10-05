@@ -7,7 +7,7 @@ définir tourner_droite:
 
 tourner_gauche
 
-répéter 3 fois:
+répéter 4 fois:
     avancer
     tourner_droite
     avancer
