@@ -1,1 +1,18 @@
 # Exercice 4 : monter l’escalier avec repeter
+avancer
+
+définir tourner_droite:
+    répéter 3 fois:
+        tourner_gauche
+
+tourner_gauche
+
+répéter 3 fois:
+    avancer
+    tourner_droite
+    avancer
+    tourner_gauche
+
+avancer
+
+ramasser_balise
