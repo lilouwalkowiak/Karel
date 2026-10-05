@@ -8,7 +8,7 @@ définir tourner_droite:
 
 tourner_gauche
 
-répéter 4 fois:
+répéter 3 fois:
     avancer
     tourner_droite
     avancer
@@ -16,6 +16,7 @@ répéter 4 fois:
 
 avancer
 
+tourner_droite
+
 ramasser_balise
 
-#COMMENTAIRE
