@@ -1,1 +1,13 @@
 # Projet : Karel le jardinier
+
+Répéter 3 fois:
+    tant que pas balise_ici:
+        avancer
+
+    si balise_ici:
+        ramasser_balise
+
+    sinon:
+        avancer
+
+
