@@ -1,15 +1,13 @@
 # Projet : Karel le jardinier
 
 définir ramasser_ligne:
-    si balise_ici:
+    tant que balise_ici:
         ramasser_balise
 
     tant que devant_libre:
         avancer
-        si balise_ici:
+        tant que balise_ici:
             ramasser_balise
-            tant que balise_ici:
-                ramasser_balise
    
 
 définir tourner_droite:
@@ -28,12 +26,18 @@ définir changer_ligne:
             avancer
             tourner_droite
 
+définir aller_au_coin:
+    tant que pas regarde_sud:
+        tourner_gauche
+    tant que devant_libre:
+        avancer
+    tourner_droite
+    tant que devant_libre:
+        avancer
+    tant que pas regarde_est:
+        tourner_gauche
 
-
-ramasser_ligne
-changer_ligne
-ramasser_ligne
-changer_ligne
-ramasser_ligne
-changer_ligne
-ramasser_ligne
+aller_au_coin
+Répéter 5 fois:
+    ramasser_ligne
+    changer_ligne
