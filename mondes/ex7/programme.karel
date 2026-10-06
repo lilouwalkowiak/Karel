@@ -38,6 +38,8 @@ définir aller_au_coin:
         tourner_gauche
 
 aller_au_coin
-Répéter 5 fois:
+Répéter 6 fois:
     ramasser_ligne
     changer_ligne
+
+    
