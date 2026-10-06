@@ -1,13 +1,39 @@
 # Projet : Karel le jardinier
 
-Répéter 3 fois:
-    tant que pas balise_ici:
-        avancer
-
+définir ramasser_ligne:
     si balise_ici:
         ramasser_balise
 
-    sinon:
+    tant que devant_libre:
         avancer
+        si balise_ici:
+            ramasser_balise
+            tant que balise_ici:
+                ramasser_balise
+   
+
+définir tourner_droite:
+    Répéter 3 fois:
+        tourner_gauche
+
+définir changer_ligne:
+    si regarde_est:
+        si gauche_libre:
+            tourner_gauche
+            avancer
+            tourner_gauche
+    sinon:
+        si droite_libre:
+            tourner_droite
+            avancer
+            tourner_droite
 
 
+
+ramasser_ligne
+changer_ligne
+ramasser_ligne
+changer_ligne
+ramasser_ligne
+changer_ligne
+ramasser_ligne
